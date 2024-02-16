@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+
+
+/* .experience .container .box h3 {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    padding-top: 1rem;
+
+} */
+:root {
+    --yellow: #f9ca24;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;  /*to show the effect*/
+}
+
+html {
+    font-size: 80.5%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    /*refer w3schools for creating customized scrollbars*/
+
+    width: 1.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 25rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /*The z-index property specifies the stack order of an element.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    background: #1a1a1a;
+    height: 100%;
+    width: 300px;
+}
+
+
+
+header .user img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 5px solid var(--yellow)
+}
+
+header .user .name {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+
+}
+
+header .navbar ul {
+    list-style: none;  /*to remove the bullet points*/
+    padding: 1rem 3rem;
+
+}
+
+
+
+
+header .navbar ul li a {
+    display: block;
+    background: #333;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 20.5rem;
+}
+
+header .navbar ul li a:hover {
+    background: var(--yellow);
+
+
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: white;
+    font-size: 26px;
+    z-index: 1000;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    display: none;
+
+}
+
+.home {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 10rem;
+    flex-flow: column;
+}
+
+.home h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.home h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--yellow);
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+
+.home p {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.btn {
+    padding: 8px 10px;
+    margin-top: 1rem;
+    background: #333;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+    width: 100px;
+
+}
+
+
+.btn:hover {
+    background: rgba(155,155,184);
+    color:black;
+
+}
+
+
+.btncv {
+    width: 150px;
+    padding: 8px 10px;
+    margin-top: 1rem;
+    background: #333;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btncv:hover {
+    background:rgba(155,155,184);
+    color:black;
+}
+
+
+#icon {
+    padding: 1px;
+}
+
+.heading {
+    text-align: center;
+    margin: 0rem 6rem;
+    border-bottom: 2px solid #fff4;
+    color: #ffff;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.heading span {
+    color: var(--yellow);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+}
+
+.about .row .info {
+    flex: 1 1 48rem;   /*flex-grow , flex-shrink and flex-basis*/
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+
+
+
+.about .row .info h3 {
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0.25rem;
+}
+
+
+.skills .counter .box1{
+    background:url("resume\ photo.jpg");
+width:10rem;
+height: 10rem;
+/* background: #222; */
+text-align: center;
+margin:2rem;
+padding:2rem;
+display: flex;
+/* flex-direction: flex-start; */
+color:#fff;
+/* flex-flow: row; */
+}
+
+
+.experience .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding:1rem 0; */
+    padding-left: 3rem;
+
+}
+
+.experience .container .box {
+    width: 24rem;
+    margin: 4rem 0rem;
+    padding-left: 3rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+
+
+.experience .container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+    margin-left: -4px;
+}
+
+
+
+.experience .container .box h3 {
+    font-size: 1.5rem;
+    color: #eee;
+    padding-top: 1rem;
+
+}
+
+
+.experience .container .box p {
+    font-size: 1.25rem;
+    color: #eee;
+    padding-top: 1.5rem;
+
+}
+.experience .container .box #grad {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--yellow);
+    color: #fff;
+}
+
+.skills .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.skills .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover; /* The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit*/
+    border-radius: 2rem;
+    cursor:pointer;
+}
+.skills .box-container .box:hover img{
+   transform: scale(1.2);  /*The scale() CSS function defines a transformation that resizes an element on the 2D plane.*/
+}
+.skills .box-container .box{
+    height: 18rem;
+    width: 20rem;
+    border-radius: 3rem;
+    margin:2rem;
+}
+
+.contact .row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:0;
+    margin-bottom:4rem;
+    
+}
+
+.contact .row form .box{
+    padding:1rem;
+    margin:1rem 0;
+    background: #3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.35rem;
+    width: 100%;
+}
+
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .message{
+    resize:none;
+    height: 12rem;
+}
+
+.contact .row .content .title{
+color:#fff;
+text-transform: uppercase;
+font-size: 2rem;
+padding-bottom: 2rem;
+
+}
+
+.contact .row .content .info h3{
+display: flex;
+align-items: center;
+font-size: 1.5rem;
+color:#eee;
+padding:1rem 0;
+font-weight: normal;
+
+
+}
+
+.contact .row .content .info span{
+    padding-right: 1rem;
+    color:var(--yellow);
+}
+
+
+
+
+@media(max-width:1200px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    .home {
+        padding: 1rem 3rem;
+    }
+
+}
+
+
+@media(max-width:991px) {
+
+    header {
+        left: -120%;
+        /* it will take the element outside of the container*/
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
+@media(max-width:400px) {
+
+    header {
+        width: 100vw;
+       
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+    .skills .box-container .box{
+        width: 100%;
+    }
+
+}
